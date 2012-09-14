@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.3077</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{40863321-9DE5-46E5-8ADE-BAB5491F0142}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <AssemblyName>SwfDotnet</AssemblyName>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>0.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <NoStdLib>false</NoStdLib>
+    <Optimize>false</Optimize>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DefineConstants>TRACE</DefineConstants>
+    <DebugSymbols>false</DebugSymbols>
+    <NoStdLib>false</NoStdLib>
+    <Optimize>true</Optimize>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Global.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotnet\DefineSprite.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotnet\Format\ActionScript\Action.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotnet\Format\ActionScript\Script.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotnet\Format\BasicTypes\AB.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotnet\Format\BasicTypes\Bit.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotnet\Format\BasicTypes\BitCounter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotnet\Format\BasicTypes\Bits.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotnet\Format\BasicTypes\FB.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotnet\Format\BasicTypes\FB16.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotnet\Format\BasicTypes\FB8.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotnet\Format\BasicTypes\IBitable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotnet\Format\BasicTypes\IBytes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotnet\Format\BasicTypes\Matrix.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotnet\Format\BasicTypes\RECT.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotnet\Format\BasicTypes\RGB.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotnet\Format\BasicTypes\RGBA.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotnet\Format\BasicTypes\SB.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotnet\Format\BasicTypes\SI16.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotnet\Format\BasicTypes\SI32.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotnet\Format\BasicTypes\SI8.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotnet\Format\BasicTypes\STRING.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotnet\Format\BasicTypes\Twip.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotnet\Format\BasicTypes\UB.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotnet\Format\BasicTypes\UI16.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotnet\Format\BasicTypes\UI32.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotnet\Format\BasicTypes\UI8.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotnet\Format\Buttons\ButtonRecord.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotnet\Format\Character.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotnet\Format\IDepthChanger.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotnet\Format\IShapeData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotnet\Format\Shapes\BitmapFill.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotnet\Format\Shapes\CurvedRecord.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotnet\Format\Shapes\EndShapeRecord.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotnet\Format\Shapes\FillStyle.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotnet\Format\Shapes\FillStyleArray.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotnet\Format\Shapes\FillStyleType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotnet\Format\Shapes\Gradient.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotnet\Format\Shapes\GradientType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotnet\Format\Shapes\GradRecord.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotnet\Format\Shapes\LineStyle.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotnet\Format\Shapes\LineStyleArray.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotnet\Format\Shapes\RecordArray.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotnet\Format\Shapes\ShapeWithStyle.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotnet\Format\Shapes\StraightRecord.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotnet\Format\Shapes\StyleChangeRecord.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotnet\Format\SwfFont.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotnet\Format\Tags\BaseTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotnet\Format\Tags\DefineShape.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotnet\Format\Tags\EnableDebugger2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotnet\Format\Tags\RecordHeader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotnet\Format\Tags\TagBgColor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotnet\Format\Tags\TagDefineBitsJPEG2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotnet\Format\Tags\TagDefineButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotnet\Format\Tags\TagDefineEditText.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotnet\Format\Tags\TagDefineFont2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotnet\Format\Tags\TagDefineShape.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotnet\Format\Tags\TagDoAction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotnet\Format\Tags\TagEnd.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotnet\Format\Tags\TagPlaceObject2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotnet\Format\Tags\TagRemoveObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotnet\Format\Tags\TagRemoveObject2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotnet\Format\Tags\TagShowFrame.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotnet\Format\UtilTypes\ArrayData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotnet\Format\UtilTypes\Boundarier.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotnet\Format\UtilTypes\CXFORM.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotnet\Format\UtilTypes\IBoundsChanger.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotnet\Frame.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotnet\FrameArray.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotnet\Header.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotnet\Layer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotnet\Layers.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotnet\Movie.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotnet\Shapes\Ellipse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotnet\Shapes\LineTool.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotnet\Shapes\Rectangle.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+</Project>

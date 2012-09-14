@@ -1,0 +1,844 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4B0B3B70-BCFF-4AD3-A922-0490910E3885}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>SwfDotNet.IO</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SwfDotNet.IO</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>SwfDotNet.IO.xml</DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net">
+      <Name>log4net</Name>
+      <HintPath>..\PlugIns\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Drawing.Design">
+      <Name>System.Drawing.Design</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <ProjectReference Include="..\SharpZipLib\SharpZipLib.csproj">
+      <Name>SharpZipLib</Name>
+      <Project>{6FE72A16-5FAF-4A01-9AB6-899DA5908A38}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\ActionCode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionAdd.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionAdd2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionAnd.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionAsciiiToChar.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionBitAnd.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionBitLShift.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionBitOr.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionBitRShift.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionBitURShift.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionBitXor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionCall.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionCallFunction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionCallMethod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionCastOp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionCatch.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionCharToAscii.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionCloneSprite.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionConstantpool.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionContainer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionDecrement.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionDefineLocal.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionDefineLocal2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionDelete.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionDelete2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionDivide.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionEnd.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionEndDrag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionEndTryBlock.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionEndWait.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionEndWith.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionEnumerate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionEnumerate2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionEquals.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionEquals2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionExtends.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionFinally.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionFunction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionFunction2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionGetMember.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionGetProperty.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionGetTime.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionGetUrl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionGetUrl2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionGetVariable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionGotoFrame.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionGotoFrame2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionGotoLabel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionGreater.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionIf.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionImplements.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionIncrement.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionInitArray.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionInitObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionInstanceOf.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionJump.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionLabel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionLess.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionLess2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionMBAsciiToChar.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionMBCharToAscii.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionMBStringExtract.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionMBStringLength.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionModulo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionMultiply.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionNewMethod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionNewObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionNextFrame.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionNot.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionOr.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionPlay.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionPop.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionPreviousFrame.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionPush.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionPushDuplicate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionPushList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionRandomNumber.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionRemoveSprite.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionReturn.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionSetMember.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionSetProperty.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionSetTarget.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionSetTarget2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionSetVariable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionStackSwap.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionStartDrag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionStop.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionStopSounds.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionStoreRegister.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionStrictEquals.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionStringAdd.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionStringEquals.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionStringExtract.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionStringGreater.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionStringLength.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionStringLess.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionSubtract.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionTargetPath.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionThrow.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionToggleQuality.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionToInteger.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionToNumber.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionToString.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionTrace.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionTry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionTypeOf.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionWaitForFrame.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionWaitForFrame2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\ActionWith.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\BaseAction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\DummyAction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\IJump.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\InvalidPushTypeException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\MultiByteAction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Actions\UnknownAction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\CodeTraverser.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\CodeWalker.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Compiler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\Decompiler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\IActionExaminer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ByteCode\InvocationExaminer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Component.cs" />
+    <Compile Include="ComponentCollection.cs" />
+    <Compile Include="Dictionary.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Exceptions\DataWriteOverflowException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Exceptions\InvalidImageFormatException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Exceptions\InvalidPixelFormatException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Exceptions\InvalidSwfVersionException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Exceptions\InvalidTagLengthException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Exceptions\UnavailableFontException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Flv.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FlvHeader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FlvReader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FlvWriter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="License.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Swc.cs" />
+    <Compile Include="SwcReader.cs" />
+    <Compile Include="SwcWriter.cs" />
+    <Compile Include="Swf.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfHeader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfReader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfWriter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\BaseTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\BaseTagCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\DefineTargetTagContainer.cs" />
+    <Compile Include="Tags\DefineBitsJepg2Tag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\DefineBitsJpeg3Tag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\DefineBitsLossLess2Tag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\DefineBitsLossLessTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\DefineBitsTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\DefineButton2Tag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\DefineButtonCxFormTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\DefineButtonSoundTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\DefineButtonTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\DefineEditTextTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\DefineFont2Tag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\DefineFontInfo2Tag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\DefineFontInfoTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\DefineFontTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\DefineMorphShapeTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\DefineShape.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\DefineShape2Tag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\DefineShape3Tag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\DefineShapeTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\DefineSoundTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\DefineSpriteTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\DefineTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\DefineTargetTag.cs" />
+    <Compile Include="Tags\DefineText.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\DefineText2Tag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\DefineTextTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\DefineVideoStreamTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\DoActionTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\EnableDebugger2Tag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\EnableDebuggerTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\EndTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\ExportAssetsTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\FlvAudioTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\FlvBaseTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\FlvBaseTagCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\FlvTagCodeEnum.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\FlvVideoTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\FrameLabelTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\IBaseTagContainer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\IDefineFont.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\ImportAssetsTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\InitActionTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\Types\ISizeStruct.cs" />
+    <Compile Include="Tags\JpegTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\PlaceObject2Tag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\PlaceObjectTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\ProtectTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\RecordHeader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\RemoveObject2Tag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\RemoveObjectTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\ScriptLimitTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\SetBackgroundColorTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\SetTabIndexTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\ShowFrameTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\SoundStreamBlockTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\SoundStreamHead2Tag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\SoundStreamHeadTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\StartSoundTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\ISwfSerializer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\TagCodeEnum.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\Types\Assert.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\Types\Bitmap.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\Types\ButtonCondaction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\Types\ButtonRecord.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\Types\ClipActionRec.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\Types\ColorMap.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\Types\CXForm.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\Types\CXFormWithAlphaData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\Types\FillStyle.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\Types\GlyphShapesCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\Types\GlyphShapesTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\Types\Gradient.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\Types\KerningRecord.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\Types\LanguageCode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\Types\LineStyle.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\Types\Matrix.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\Types\MorphFillStyle.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\Types\MorphGradient.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\Types\MorphLineStyle.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\Types\Pix.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\Types\Rect.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\Types\RGBColor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\Types\ShapeRecord.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\Types\ShapeRecordCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\Types\ShapeWithStyle.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\Types\ShortCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\Types\Sound.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\Types\TextRecord.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\Types\VideoPacket.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\VideoFrameTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utils\BigEndianBitConverter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utils\BinaryStringRW.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utils\BitParser.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utils\BufferedBinaryReader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utils\BufferedBinaryWriter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utils\EndianBitConverter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utils\Endianness.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utils\ImageFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utils\LittleEndianBitConverter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utils\SimpleHash.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <None Include="Doc\SwfDotNet.IO.chm" />
+    <None Include="Doc\SwfDotNet.IO.ndoc" />
+    <None Include="SwfDotNet.IO.cd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

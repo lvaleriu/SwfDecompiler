@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwfDecompiler", "SwfDecompiler\SwfDecompiler.csproj", "{B8233BD5-8024-456C-8F09-E9A661F6F6F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwfDotNet.IO", "Plugins\swfdotnet-1.0\sources\SwfDotNet.IO\SwfDotNet.IO.csproj", "{4B0B3B70-BCFF-4AD3-A922-0490910E3885}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwfDotnet", "Plugins\SwfDotnet\SwfDotnet.csproj", "{40863321-9DE5-46E5-8ADE-BAB5491F0142}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B8233BD5-8024-456C-8F09-E9A661F6F6F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8233BD5-8024-456C-8F09-E9A661F6F6F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8233BD5-8024-456C-8F09-E9A661F6F6F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8233BD5-8024-456C-8F09-E9A661F6F6F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B0B3B70-BCFF-4AD3-A922-0490910E3885}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B0B3B70-BCFF-4AD3-A922-0490910E3885}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B0B3B70-BCFF-4AD3-A922-0490910E3885}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B0B3B70-BCFF-4AD3-A922-0490910E3885}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40863321-9DE5-46E5-8ADE-BAB5491F0142}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40863321-9DE5-46E5-8ADE-BAB5491F0142}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40863321-9DE5-46E5-8ADE-BAB5491F0142}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40863321-9DE5-46E5-8ADE-BAB5491F0142}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,41 @@
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwfDotNet.IO", "SwfDotNet.IO\SwfDotNet.IO.csproj", "{4B0B3B70-BCFF-4AD3-A922-0490910E3885}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpZipLib", "SharpZipLib\SharpZipLib.csproj", "{6FE72A16-5FAF-4A01-9AB6-899DA5908A38}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|.NET = Debug|.NET
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Release|.NET = Release|.NET
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4B0B3B70-BCFF-4AD3-A922-0490910E3885}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{4B0B3B70-BCFF-4AD3-A922-0490910E3885}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B0B3B70-BCFF-4AD3-A922-0490910E3885}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B0B3B70-BCFF-4AD3-A922-0490910E3885}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{4B0B3B70-BCFF-4AD3-A922-0490910E3885}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{4B0B3B70-BCFF-4AD3-A922-0490910E3885}.Release|.NET.ActiveCfg = Release|Any CPU
+		{4B0B3B70-BCFF-4AD3-A922-0490910E3885}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B0B3B70-BCFF-4AD3-A922-0490910E3885}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B0B3B70-BCFF-4AD3-A922-0490910E3885}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{4B0B3B70-BCFF-4AD3-A922-0490910E3885}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{6FE72A16-5FAF-4A01-9AB6-899DA5908A38}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{6FE72A16-5FAF-4A01-9AB6-899DA5908A38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FE72A16-5FAF-4A01-9AB6-899DA5908A38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FE72A16-5FAF-4A01-9AB6-899DA5908A38}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{6FE72A16-5FAF-4A01-9AB6-899DA5908A38}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{6FE72A16-5FAF-4A01-9AB6-899DA5908A38}.Release|.NET.ActiveCfg = Release|Any CPU
+		{6FE72A16-5FAF-4A01-9AB6-899DA5908A38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FE72A16-5FAF-4A01-9AB6-899DA5908A38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FE72A16-5FAF-4A01-9AB6-899DA5908A38}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{6FE72A16-5FAF-4A01-9AB6-899DA5908A38}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
