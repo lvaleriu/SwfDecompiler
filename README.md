@@ -1,6 +1,8 @@
 SwfDecompiler
 =============
 
+[![Join the chat at https://gitter.im/lvaleriu/SwfDecompiler](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/lvaleriu/SwfDecompiler?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 SwfDotNet is an open source library to read and write binary Swf files in C# or VB.net.
 This library has been writted by Olivier CARPENTIER for the Adelina foundation.
 
